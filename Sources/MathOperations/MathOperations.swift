@@ -32,9 +32,9 @@
 }
 
 @discardableResult public func addArrayNumbers(numbers: [String]) -> Int {
-    var sum = 0
+    var sum : Int = 0
     for number in numbers {
-        sum+= Int(number) ?? 0
+        sum = sum + Int(number) ?? 0
     }
     
     print("adding the numbers gives: \(sum)")
